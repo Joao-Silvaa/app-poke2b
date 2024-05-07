@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import pokemon from './assets/pokeapi_256.png'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,8 +10,8 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
+        <a href="https://pokeapi.co/?ref=public-apis" target="_blank">
+          <img src={pokemon} className="logo" alt="Vite logo" />
         </a>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -22,6 +23,7 @@ function App() {
           count is {count}
         </button>
         <p>
+          <Listagem />
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
